@@ -5,6 +5,8 @@ extern crate time;
 extern crate rng;
 extern crate pseudo_random;
 
+extern crate gl_context;
+
 #[macro_use]
 extern crate vector;
 
@@ -24,6 +26,7 @@ extern crate sprite_gl_renderer;
 use rng::Rng;
 use pseudo_random::Prng;
 
+use gl_context::CullFace;
 use material::Material;
 use shader::Shader;
 
@@ -112,6 +115,8 @@ fn main() {
         entity.add_component(transform);
 
         let mut material = Material::new();
+        material.set_cull_face(CullFace::None);
+        material.set_wireframe(true);
         material.set_shader(Shader::new(VS_SRC, FS_SRC));
 
         entity.add_component(Sprite::new(material));
