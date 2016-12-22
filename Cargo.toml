@@ -1,0 +1,35 @@
+[package]
+name = "sprite_gl_renderer"
+version = "0.1.0"
+authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
+
+keywords = ["sprite_gl_renderer"]
+description = "sprite gl renderer for scene renderer"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/nathanfaucett/rs-sprite_gl_renderer.git"
+homepage = "https://github.com/nathanfaucett/rs-sprite_gl_renderer"
+
+exclude = ["example"]
+
+[dependencies]
+gl = {version = "0.6.1"}
+
+geometry = {git = "https://github.com/nathanfaucett/rs-geometry.git"}
+
+scene_graph = {git = "https://github.com/nathanfaucett/rs-scene_graph.git"}
+scene_renderer = {git = "https://github.com/nathanfaucett/rs-scene_renderer.git"}
+
+gl_renderer_plugin = {git = "https://github.com/nathanfaucett/rs-gl_renderer_plugin.git"}
+
+sprite_component = {git = "https://github.com/nathanfaucett/rs-sprite_component.git"}
+camera_components = {git = "https://github.com/nathanfaucett/rs-camera_components.git"}
+transform_components = {git = "https://github.com/nathanfaucett/rs-transform_components.git"}
+
+vector = {git = "https://github.com/nathanfaucett/rs-vector.git"}
+
+
+mat3 = {git = "https://github.com/nathanfaucett/rs-mat3.git"}
+mat4 = {git = "https://github.com/nathanfaucett/rs-mat4.git"}
+
+shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}
