@@ -5,8 +5,8 @@ authors = ["nathanfaucett <nathanfaucett@gmail.com>"]
 
 [dependencies]
 time = "0.1"
-gl = "0.6.1"
-glutin = "0.7.0"
+gl = "*"
+glutin = "*"
 
 rng = {git = "https://github.com/nathanfaucett/rs-rng"}
 pseudo_random = {git = "https://github.com/nathanfaucett/rs-pseudo_random"}

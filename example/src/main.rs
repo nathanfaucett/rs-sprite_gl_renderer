@@ -163,7 +163,7 @@ fn main() {
         let ms = now();
         let mut transform = camera.get_entity().unwrap().get_component::<Transform3D>().unwrap();
 
-        transform.set_position(&[(ms.sin() * 10f64) as f32, (ms.cos() * 10f64) as f32, 5f32]);
+        transform.set_position(&[(ms.sin() * 10f64) as f32, (ms.cos() * 10f64) as f32, (ms.cos() * 10f64) as f32]);
         transform.look_at(&[0f32, 0f32, 0f32], &[0f32, 0f32, 1f32]);
 
         scene.update();
